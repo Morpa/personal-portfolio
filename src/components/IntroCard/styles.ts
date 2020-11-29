@@ -1,15 +1,28 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.main`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: ${theme.colors.lightGray};
+  `}
 `
 
-export const IconsWrapper = styled.div`
+export const SocialLinks = styled.div`
   display: flex;
   justify-content: flex-end;
+  align-items: stretch;
+`
+export const IconWrapper = styled.div`
+  ${({ theme }) => css`
+    color: ${theme.colors.black};
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.3rem;
+  `}
 `
 
 export const InfoWrapper = styled.div`

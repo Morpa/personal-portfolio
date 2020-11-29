@@ -6,8 +6,4 @@ export default {
   component: IntroCard
 } as Meta
 
-export const Default: Story = () => (
-  <div style={{ maxWidth: 500, padding: 15 }}>
-    <IntroCard />
-  </div>
-)
+export const Default: Story = () => <IntroCard />
