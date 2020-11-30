@@ -1,9 +1,13 @@
+import IntroCard from 'components/IntroCard'
 import Particles from 'react-particles-js'
 
 import * as S from './styles'
 
 const Main = () => (
   <S.Wrapper>
+    <div className="scale-in-center" id="welcome">
+      <IntroCard />
+    </div>
     <Particles
       className="particles"
       params={{
