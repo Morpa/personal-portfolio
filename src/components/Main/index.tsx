@@ -1,9 +1,21 @@
 import Particles from 'react-particles-js'
+import { MotionProps } from 'framer-motion'
+
+import IntroCard from 'components/IntroCard'
 
 import * as S from './styles'
 
+const animationSpring: MotionProps = {
+  initial: { transform: 'translateY(100%)' },
+  animate: { transform: 'translateY(0px)' }
+}
+
 const Main = () => (
   <S.Wrapper>
+    <S.Card {...animationSpring}>
+      <IntroCard />
+    </S.Card>
+
     <Particles
       className="particles"
       params={{

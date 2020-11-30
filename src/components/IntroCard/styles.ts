@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
+import { motion } from 'framer-motion'
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
@@ -7,7 +8,7 @@ export const Wrapper = styled.main`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: ${theme.colors.mainBg};
+    background-color: transparent;
     padding: ${theme.spacings.large};
 
     > a {
@@ -21,7 +22,7 @@ export const SocialLinks = styled.div`
   justify-content: flex-end;
   align-items: stretch;
 `
-export const IconWrapper = styled.div`
+export const IconWrapper = styled(motion.div)`
   ${({ theme }) => css`
     color: ${theme.colors.yellow};
     cursor: pointer;

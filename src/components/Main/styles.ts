@@ -1,18 +1,24 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const Wrapper = styled.main`
-  ${({ theme }) => css`
-    background-color: ${theme.colors.mainBg};
-    color: ${theme.colors.yellow};
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 
-    .particles {
-      background: radial-gradient(
-        circle,
-        rgba(193, 196, 209, 1) 0%,
-        rgba(3, 3, 29, 1) 100%
-      );
-    }
-  `}
+  .particles {
+    height: 100vh;
+    width: 100vw;
+  }
+`
+
+export const Card = styled(motion.div)`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
