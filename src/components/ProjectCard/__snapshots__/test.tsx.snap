@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProjectCard /> should render correctly 1`] = `
+.c9 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: linear-gradient(180deg,#ff5f5f 0%,#f062c0 50%);
+  color: #FAFAFA;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+
+.c8:hover {
+  background: linear-gradient(180deg,#e35565 0%,#d958a6 50%);
+}
+
+.c8 svg {
+  width: 1.5rem;
+}
+
+.c8 svg + span {
+  margin-left: 0.8rem;
+}
+
+.c4 {
+  color: #030517;
+  font-weight: 400;
+  padding-left: 0.8rem;
+  border-left: 0.7rem solid #3CD3C1;
+  font-size: 2.2rem;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #FAFAFA;
+  border-radius: 0.4rem;
+}
+
+.c1 {
+  height: 24rem;
+  width: 100%;
+  background: #f6f7f8;
+  background-image: linear-gradient( to right,#f6f7f8 0%,#edeef1 20%,#f6f7f8 40%,#f6f7f8 100% );
+  background-size: 80rem 14rem;
+  -webkit-animation: placeholderShimmer 1s linear infinite forwards;
+  animation: placeholderShimmer 1s linear infinite forwards;
+}
+
+.c1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  margin: 1.6rem;
+}
+
+.c3 {
+  max-width: calc(100% - 2.5rem);
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 2.4rem;
+}
+
+.c6 .c7 {
+  background: #06092B;
+  font-size: 2.0rem;
+  margin-right: 0.8rem;
+}
+
+.c6 .c7 svg {
+  width: 3rem;
+}
+
+.c6 .c7:hover {
+  background: #29b3a3;
+}
+
+.c10 .c7 {
+  background: #06092B;
+  font-size: 2.0rem;
+}
+
+.c10 .c7 svg {
+  width: 3rem;
+}
+
+.c10 .c7:hover {
+  background: #29b3a3;
+}
+
+@media (min-width:1170px) {
+  .c4 {
+    font-size: 2.8rem;
+  }
+}
+
+<article
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <img
+      alt="Population Zero"
+      src="https://source.unsplash.com/user/willianjusten/300x140"
+    />
+  </div>
+  <div
+    class="c2"
+  >
+    <div
+      class="c3"
+    >
+      <h2
+        class="c4"
+        color="black"
+      >
+        Population Zero
+      </h2>
+    </div>
+    <div
+      class="c5"
+    >
+      <div
+        class="c6"
+      >
+        <a
+          aria-label="live"
+          class="c7 c8"
+          href="https://site.com"
+        >
+          <svg
+            aria-hidden="true"
+            class="c9"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"
+            />
+          </svg>
+          <span>
+            Live
+          </span>
+        </a>
+      </div>
+      <div
+        class="c10"
+      >
+        <a
+          aria-label="github"
+          class="c7 c8"
+          href="https://git.com"
+        >
+          <svg
+            aria-hidden="true"
+            class="c9"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 012.496-.336 9.554 9.554 0 012.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <span>
+            Github
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</article>
+`
