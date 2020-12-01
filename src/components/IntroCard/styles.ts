@@ -63,3 +63,9 @@ export const Title = styled.div`
     margin-bottom: ${theme.spacings.medium};
   `}
 `
+
+export const ButtonWrapper = styled(motion.div)`
+  ${({ theme }) => css`
+    margin-top: ${theme.spacings.medium};
+  `}
+`

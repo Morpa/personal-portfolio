@@ -81,6 +81,11 @@ const Main = () => (
                 src: '/img/tech/typescript.svg',
                 height: 23,
                 width: 23
+              },
+              {
+                src: '/img/tech/styled.svg',
+                height: 23,
+                width: 23
               }
             ]
           },

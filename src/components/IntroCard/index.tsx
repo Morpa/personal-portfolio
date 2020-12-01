@@ -25,6 +25,14 @@ const animationSpring: MotionProps = {
   }
 }
 
+const animationButton: MotionProps = {
+  whileHover: { scale: 1.2 },
+  transition: {
+    duration: 0.3,
+    yoyo: 3
+  }
+}
+
 const IntroCard = () => (
   <S.Wrapper>
     <S.SocialLinks>
@@ -63,16 +71,18 @@ const IntroCard = () => (
       </Heading>
     </S.InfoWrapper>
 
-    <Button
-      icon={<Portfolio />}
-      size="large"
-      as="a"
-      href="/portfolio"
-      minimal
-      aria-label="portfolio"
-    >
-      Portfolio
-    </Button>
+    <S.ButtonWrapper {...animationButton}>
+      <Button
+        icon={<Portfolio />}
+        size="large"
+        as="a"
+        href="/portfolio"
+        minimal
+        aria-label="portfolio"
+      >
+        Portfolio
+      </Button>
+    </S.ButtonWrapper>
   </S.Wrapper>
 )
 
