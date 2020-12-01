@@ -2,10 +2,13 @@ import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 import { motion } from 'framer-motion'
 
+import * as ButtonStyles from 'components/Button/styles'
+
 export const Wrapper = styled.main`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -13,6 +16,18 @@ export const Wrapper = styled.main`
 
     > a {
       margin: ${theme.spacings.small} 0;
+    }
+
+    ${media.lessThan('medium')`
+      padding: ${theme.spacings.xxlarge};
+    `}
+
+    ${ButtonStyles.Wrapper} {
+      font-size: ${theme.font.sizes.xxlarge};
+
+      svg {
+        width: 2rem;
+      }
     }
   `}
 `

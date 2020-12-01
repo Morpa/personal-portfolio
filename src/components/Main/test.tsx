@@ -1,21 +1,26 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
+import { renderWithTheme } from 'utils/tests/helpers'
 
 import Main from '.'
 
+jest.mock('components/Main', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return (
+        <div data-testid="Mock Main">
+          <div data-testid="Mock IntroCard"></div>
+        </div>
+      )
+    }
+  }
+})
+
 describe('<Main />', () => {
-  it('should render the heading', () => {
-    const { container } = render(<Main />)
+  it('should render banner and showcases', () => {
+    renderWithTheme(<Main />)
 
-    expect(
-      screen.getByRole('heading', { name: /react avançado/i })
-    ).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
-  })
-
-  it('should render the colors correctly', () => {
-    const { container } = render(<Main />)
-
-    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })
+    expect(screen.getByTestId('Mock Main')).toBeInTheDocument()
+    expect(screen.getByTestId('Mock IntroCard')).toBeInTheDocument()
   })
 })
