@@ -1,13 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ProjectCard /> should render correctly 1`] = `
-.c9 {
+exports[`<ProjectCard /> should render ProjectCard correctly 1`] = `
+.c11 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
 }
 
-.c8 {
+.c2 {
+  position: absolute;
+  top: 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  color: #FAFAFA;
+  font-size: 1.4rem;
+  padding: 0 2.4rem;
+  height: 3.6rem;
+  right: -2rem;
+  background-color: #F231A5;
+}
+
+.c2::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  border-style: solid;
+  border-left-width: 0rem;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-bottom-width: 1rem;
+}
+
+.c2::before {
+  top: 3.6rem;
+  border-top-width: 1rem;
+  border-right-width: 2rem;
+}
+
+.c2::before {
+  border-left-color: #b20b6f;
+  border-top-color: #b20b6f;
+}
+
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -32,24 +74,41 @@ exports[`<ProjectCard /> should render correctly 1`] = `
   font-size: 1.2rem;
 }
 
-.c8:hover {
+.c10:hover {
   background: linear-gradient(180deg,#e35565 0%,#d958a6 50%);
 }
 
-.c8 svg {
+.c10 svg {
   width: 1.5rem;
 }
 
-.c8 svg + span {
+.c10 svg + span {
   margin-left: 0.8rem;
 }
 
-.c4 {
+.c6 {
   color: #030517;
   font-weight: 400;
   padding-left: 0.8rem;
   border-left: 0.7rem solid #3CD3C1;
   font-size: 2.2rem;
+}
+
+.c17 {
+  color: #FAFAFA;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 3.2rem;
+  font-size: 5.2rem;
+}
+
+.c17::after {
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  content: '';
+  width: 5rem;
+  border-bottom: 0.5rem solid #F231A5;
 }
 
 .c0 {
@@ -67,7 +126,7 @@ exports[`<ProjectCard /> should render correctly 1`] = `
   border-radius: 0.4rem;
 }
 
-.c1 {
+.c3 {
   height: 24rem;
   width: 100%;
   background: #f6f7f8;
@@ -77,13 +136,13 @@ exports[`<ProjectCard /> should render correctly 1`] = `
   animation: placeholderShimmer 1s linear infinite forwards;
 }
 
-.c1 img {
+.c3 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.c2 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -100,11 +159,11 @@ exports[`<ProjectCard /> should render correctly 1`] = `
   margin: 1.6rem;
 }
 
-.c3 {
+.c5 {
   max-width: calc(100% - 2.5rem);
 }
 
-.c5 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -120,46 +179,160 @@ exports[`<ProjectCard /> should render correctly 1`] = `
   margin-top: 2.4rem;
 }
 
-.c6 .c7 {
+.c12 .c9 {
   background: #06092B;
-  font-size: 2.0rem;
   margin-right: 0.8rem;
 }
 
-.c6 .c7 svg {
+.c12 .c9 svg {
   width: 3rem;
 }
 
-.c6 .c7:hover {
+.c12 .c9:hover {
   background: #29b3a3;
 }
 
-.c10 .c7 {
+.c8 .c9 {
   background: #06092B;
-  font-size: 2.0rem;
+  font-size: 1.8rem;
+  margin-right: 0.8rem;
 }
 
-.c10 .c7 svg {
-  width: 3rem;
+.c8 .c9 > svg {
+  width: 2.5rem;
 }
 
-.c10 .c7:hover {
+.c8 .c9:hover {
   background: #29b3a3;
+}
+
+.c13 .c9 {
+  background: #06092B;
+  font-size: 1.8rem;
+  margin-right: -0.6rem;
+}
+
+.c13 .c9 > svg {
+  width: 2.5rem;
+}
+
+.c13 .c9:hover {
+  background: #29b3a3;
+}
+
+.c14 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 40;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  padding: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c15 {
+  color: #FAFAFA;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+
+.c16 {
+  max-width: min(120rem,100%);
+  max-height: 80rem;
+}
+
+.c20 {
+  color: #FAFAFA;
+}
+
+.c18 {
+  list-style: none;
+  margin: 0.8rem 0;
+  color: #FAFAFA;
+}
+
+.c19 {
+  color: #FAFAFA;
+}
+
+.c19:before {
+  content: '✔';
+  font-size: 2.0rem;
+  color: #F231A5;
+  margin-right: 0.8rem;
 }
 
 @media (min-width:1170px) {
-  .c4 {
+  .c6 {
     font-size: 2.8rem;
   }
 }
 
 @media (max-width:1170px) {
-  .c0 .sc-bdfBwQ {
+  .c0 .c1 {
     right: 0;
   }
 
-  .c0 .sc-bdfBwQ::before {
+  .c0 .c1::before {
     display: none;
+  }
+}
+
+@media (max-width:768px) {
+  .c7 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width:768px) {
+  .c12 .c9 svg {
+    width: 2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c8 .c9 {
+    font-size: 1.4rem;
+  }
+
+  .c8 .c9 svg {
+    width: 2rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c13 .c9 {
+    font-size: 1.4rem;
+    margin-right: -0.3rem;
+  }
+
+  .c13 .c9 svg {
+    width: 2rem;
   }
 }
 
@@ -167,40 +340,46 @@ exports[`<ProjectCard /> should render correctly 1`] = `
   class="c0"
 >
   <div
-    class="c1"
+    class="c1 c2"
+    color="primary"
+  >
+    NEW
+  </div>
+  <div
+    class="c3"
   >
     <img
       alt="Population Zero"
-      src="https://source.unsplash.com/user/willianjusten/300x140"
+      src="/img/games/red-dead-img.jpg"
     />
   </div>
   <div
-    class="c2"
+    class="c4"
   >
     <div
-      class="c3"
+      class="c5"
     >
       <h2
-        class="c4"
+        class="c6"
         color="black"
       >
         Population Zero
       </h2>
     </div>
     <div
-      class="c5"
+      class="c7"
     >
       <div
-        class="c6"
+        class="c8"
       >
         <a
           aria-label="live"
-          class="c7 c8"
+          class="c9 c10"
           href="https://site.com"
         >
           <svg
             aria-hidden="true"
-            class="c9"
+            class="c11"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -220,16 +399,41 @@ exports[`<ProjectCard /> should render correctly 1`] = `
         </a>
       </div>
       <div
-        class="c10"
+        class="c12"
+      >
+        <button
+          aria-label="open modal"
+          class="c9 c10"
+        >
+          <svg
+            aria-hidden="true"
+            class="c11"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="c13"
       >
         <a
           aria-label="github"
-          class="c7 c8"
+          class="c9 c10"
           href="https://git.com"
         >
           <svg
             aria-hidden="true"
-            class="c9"
+            class="c11"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -246,6 +450,73 @@ exports[`<ProjectCard /> should render correctly 1`] = `
           </span>
         </a>
       </div>
+    </div>
+  </div>
+  <div
+    aria-hidden="true"
+    aria-label="modal"
+    class="c14"
+  >
+    <div
+      aria-label="close modal"
+      class="c15"
+      role="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c11"
+        fill="currentColor"
+        focusable="false"
+        height="40"
+        viewBox="0 0 24 24"
+        width="40"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+        />
+      </svg>
+    </div>
+    <div
+      class="c16"
+    >
+      <h2
+        class="c17"
+        color="white"
+      >
+        Techs
+      </h2>
+      <ul
+        class="c18"
+      >
+        <li
+          class="c19"
+        >
+           
+          React
+        </li>
+        <li
+          class="c19"
+        >
+           
+          Next
+        </li>
+      </ul>
+      <h2
+        class="c17"
+        color="white"
+      >
+        Description
+      </h2>
+      <p
+        class="c20"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptasipsam expedita unde, cupiditate eos temporibus veritatis minima etmaiores maxime mollitia saepe ab, incidunt quod, quo doloribusdelectus omnis ratione.
+      </p>
     </div>
   </div>
 </article>

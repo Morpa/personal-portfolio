@@ -13,6 +13,11 @@ export default {
     projects: {
       type: ''
     }
+  },
+  parameters: {
+    backgrounds: {
+      default: 'port-dark'
+    }
   }
 } as Meta
 

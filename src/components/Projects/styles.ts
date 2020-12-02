@@ -22,7 +22,7 @@ export const TopContainer = styled(Container)`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.large};
 
-    a {
+    > a {
       margin-bottom: ${theme.spacings.large};
     }
   `}

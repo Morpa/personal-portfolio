@@ -7,6 +7,7 @@ import { Grid } from 'components/Grid'
 import ProjectCard, { ProjectCardProps } from 'components/ProjectCard'
 
 import * as S from './styles'
+import Footer from 'components/Footer'
 
 export type ProjectsProps = {
   projects: ProjectCardProps[]
@@ -33,6 +34,7 @@ const Projects = ({ projects }: ProjectsProps) => (
         ))}
       </Grid>
     </Container>
+    <Footer />
   </S.Wrapper>
 )
 

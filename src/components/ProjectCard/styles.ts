@@ -88,13 +88,16 @@ export const ButtonsWrapper = styled.div`
     align-items: center;
     justify-content: flex-end;
     margin-top: ${theme.spacings.small};
+
+    ${media.lessThan('medium')`
+      justify-content: space-between;
+    `}
   `}
 `
-export const Live = styled(motion.div)`
+export const More = styled(motion.div)`
   ${({ theme }) => css`
     ${ButtonStyles.Wrapper} {
       background: ${theme.colors.mainBg};
-      font-size: ${theme.font.sizes.xlarge};
       margin-right: ${theme.spacings.xxsmall};
 
       svg {
@@ -105,21 +108,143 @@ export const Live = styled(motion.div)`
         background: ${darken(0.1, theme.colors.secondary)};
       }
     }
+
+    ${media.lessThan('medium')`
+        ${ButtonStyles.Wrapper} {
+          svg {
+            width: 2rem;
+          }
+        }
+    `}
+  `}
+`
+export const Live = styled(motion.div)`
+  ${({ theme }) => css`
+    ${ButtonStyles.Wrapper} {
+      background: ${theme.colors.mainBg};
+      font-size: ${theme.font.sizes.large};
+      margin-right: ${theme.spacings.xxsmall};
+
+      > svg {
+        width: 2.5rem;
+      }
+
+      &:hover {
+        background: ${darken(0.1, theme.colors.secondary)};
+      }
+    }
+
+    ${media.lessThan('medium')`
+        ${ButtonStyles.Wrapper} {
+          font-size: ${theme.font.sizes.small};
+
+          svg {
+            width: 2rem;
+          }
+        }
+    `}
   `}
 `
 export const Git = styled(motion.div)`
   ${({ theme }) => css`
     ${ButtonStyles.Wrapper} {
       background: ${theme.colors.mainBg};
-      font-size: ${theme.font.sizes.xlarge};
+      font-size: ${theme.font.sizes.large};
+      margin-right: -0.6rem;
 
-      svg {
-        width: 3rem;
+      > svg {
+        width: 2.5rem;
       }
 
       &:hover {
         background: ${darken(0.1, theme.colors.secondary)};
       }
+    }
+
+    ${media.lessThan('medium')`
+        ${ButtonStyles.Wrapper} {
+          font-size: ${theme.font.sizes.small};
+          margin-right: -0.3rem;
+
+          svg {
+            width: 2rem;
+          }
+        }
+    `}
+  `}
+`
+type ModalProps = {
+  isOpen: boolean
+}
+
+const modalModifiers = {
+  open: () => css`
+    opacity: 1;
+  `,
+
+  close: () => css`
+    opacity: 0;
+    pointer-events: none;
+  `
+}
+
+export const Modal = styled.div<ModalProps>`
+  ${({ theme, isOpen }) => css`
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: ${theme.layers.modal};
+    transition: opacity ${theme.transition.default};
+    padding: ${theme.spacings.xxsmall};
+
+    ${isOpen && modalModifiers.open()}
+    ${!isOpen && modalModifiers.close()}
+  `}
+`
+
+export const Close = styled.div`
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+  `}
+`
+export const ModalContent = styled.div`
+  max-width: min(120rem, 100%);
+  max-height: 80rem;
+`
+export const Description = styled.p`
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+  `}
+`
+
+export const TechsWrapper = styled.ul`
+  ${({ theme }) => css`
+    list-style: none;
+    margin: ${theme.spacings.xxsmall} 0;
+    color: ${theme.colors.white};
+  `}
+`
+export const Tech = styled.li`
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    :before {
+      content: '\u2714';
+      font-size: ${theme.font.sizes.xlarge};
+      color: ${theme.colors.primary};
+      margin-right: ${theme.spacings.xxsmall};
     }
   `}
 `
