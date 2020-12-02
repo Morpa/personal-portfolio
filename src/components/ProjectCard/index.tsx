@@ -36,8 +36,8 @@ const ProjectCard = ({
   url,
   github,
   ribbon,
-  ribbonColor,
-  ribbonSize
+  ribbonColor = 'primary',
+  ribbonSize = 'normal'
 }: ProjectCardProps) => (
   <S.Wrapper>
     {!!ribbon && (

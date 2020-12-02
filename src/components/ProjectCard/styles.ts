@@ -1,8 +1,10 @@
 import styled, { css } from 'styled-components'
 import { darken } from 'polished'
 import { motion } from 'framer-motion'
+import media from 'styled-media-query'
 
 import * as ButtonStyles from 'components/Button/styles'
+import * as RibbonStyles from 'components/Ribbon/styles'
 
 export const Wrapper = styled.article`
   ${({ theme }) => css`
@@ -13,6 +15,15 @@ export const Wrapper = styled.article`
     height: 100%;
     background-color: ${theme.colors.white};
     border-radius: ${theme.border.radius};
+
+    ${media.lessThan('large')`
+      ${RibbonStyles.Wrapper} {
+        right: 0;
+        &::before {
+          display: none;
+        }
+      }
+  `}
   `}
 `
 

@@ -76,11 +76,11 @@ const IntroCard = () => (
         icon={<Portfolio />}
         size="large"
         as="a"
-        href="/portfolio"
+        href="/projects"
         minimal
-        aria-label="portfolio"
+        aria-label="projects"
       >
-        Portfolio
+        Projects
       </Button>
     </S.ButtonWrapper>
   </S.Wrapper>

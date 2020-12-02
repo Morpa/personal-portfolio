@@ -19,9 +19,9 @@ describe('<IntroCard />', () => {
       screen.getByRole('heading', { name: /front end developer/i })
     ).toBeInTheDocument()
 
-    expect(screen.getByRole('link', { name: /portfolio/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /projects/i })).toHaveAttribute(
       'href',
-      '/portfolio'
+      '/projects'
     )
   })
 })
