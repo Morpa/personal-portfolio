@@ -32,6 +32,10 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="description" content="My personal portfolio" />
+        <meta
+          name="google-site-verification"
+          content="7B2zsyX4d4aviD42HO2alk4CNAplAk25PLE5UmQt-3E"
+        />
       </Head>
       <NextSeo
         title="Morpa"
