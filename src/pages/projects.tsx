@@ -1,6 +1,6 @@
 import Projects, { ProjectsProps } from 'components/Projects'
 
-import projectsMock from 'components/Projects/mock'
+import projectsData from 'data/projects'
 
 export default function Portfolio(props: ProjectsProps) {
   return <Projects {...props} />
@@ -9,7 +9,7 @@ export default function Portfolio(props: ProjectsProps) {
 export async function getStaticProps() {
   return {
     props: {
-      projects: projectsMock
+      projects: projectsData
     }
   }
 }
