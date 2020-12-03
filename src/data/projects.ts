@@ -62,6 +62,7 @@ export default [
     github: 'https://github.com/Morpa/Won-Games-Client',
     url: 'https://won-games.vercel.app/',
     ribbon: 'UNDER DEVELOPMENT',
+    ribbonColor: 'secondary',
     description: 'Fictitious online game store.',
     techs: [
       'TypeScript',
