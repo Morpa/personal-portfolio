@@ -302,37 +302,16 @@ exports[`<ProjectCard /> should render ProjectCard correctly 1`] = `
 
 @media (max-width:768px) {
   .c7 {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
   }
 }
 
 @media (max-width:768px) {
-  .c12 .c9 svg {
-    width: 2rem;
-  }
-}
-
-@media (max-width:768px) {
-  .c8 .c9 {
-    font-size: 1.4rem;
-  }
-
-  .c8 .c9 svg {
-    width: 2rem;
-  }
-}
-
-@media (max-width:768px) {
-  .c13 .c9 {
-    font-size: 1.4rem;
-    margin-right: -0.3rem;
-  }
-
-  .c13 .c9 svg {
-    width: 2rem;
+  .c12 {
+    display: none;
   }
 }
 

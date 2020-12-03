@@ -90,7 +90,7 @@ export const ButtonsWrapper = styled.div`
     margin-top: ${theme.spacings.small};
 
     ${media.lessThan('medium')`
-      justify-content: space-between;
+      justify-content: space-around;
     `}
   `}
 `
@@ -110,11 +110,7 @@ export const More = styled(motion.div)`
     }
 
     ${media.lessThan('medium')`
-        ${ButtonStyles.Wrapper} {
-          svg {
-            width: 2rem;
-          }
-        }
+      display:none;
     `}
   `}
 `
@@ -133,16 +129,6 @@ export const Live = styled(motion.div)`
         background: ${darken(0.1, theme.colors.secondary)};
       }
     }
-
-    ${media.lessThan('medium')`
-        ${ButtonStyles.Wrapper} {
-          font-size: ${theme.font.sizes.small};
-
-          svg {
-            width: 2rem;
-          }
-        }
-    `}
   `}
 `
 export const Git = styled(motion.div)`
@@ -160,17 +146,6 @@ export const Git = styled(motion.div)`
         background: ${darken(0.1, theme.colors.secondary)};
       }
     }
-
-    ${media.lessThan('medium')`
-        ${ButtonStyles.Wrapper} {
-          font-size: ${theme.font.sizes.small};
-          margin-right: -0.3rem;
-
-          svg {
-            width: 2rem;
-          }
-        }
-    `}
   `}
 `
 type ModalProps = {
@@ -203,8 +178,8 @@ export const Modal = styled.div<ModalProps>`
     transition: opacity ${theme.transition.default};
     padding: ${theme.spacings.xxsmall};
 
-    ${isOpen && modalModifiers.open()}
-    ${!isOpen && modalModifiers.close()}
+    ${isOpen && modalModifiers.open()};
+    ${!isOpen && modalModifiers.close()};
   `}
 `
 
