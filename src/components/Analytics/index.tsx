@@ -2,7 +2,7 @@ const Analytics = () => (
   <>
     <script
       async
-      src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING}`}
+      src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GANALYTICS}`}
     />
     <script
       dangerouslySetInnerHTML={{
