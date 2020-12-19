@@ -75,5 +75,25 @@ export default [
       'Prettier',
       'Husky'
     ]
+  },
+  {
+    title: 'LinkedIn Redesign',
+    img: '/img/projects/linkedin.png',
+    github: 'https://github.com/Morpa/Linkedin-Redesign',
+    url: 'https://linkedin-redesign.vercel.app/',
+    ribbon: 'UNDER DEVELOPMENT',
+    ribbonColor: 'secondary',
+    description: 'Fictitious profile linkedin with new design.',
+    techs: [
+      'TypeScript',
+      'NextJS',
+      'Styled Components',
+      'Jest',
+      'React Testing Library',
+      'Storybook',
+      'Eslint',
+      'Prettier',
+      'Husky'
+    ]
   }
 ]
