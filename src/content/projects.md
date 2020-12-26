@@ -28,5 +28,17 @@ projects:
     source: "https://github.com/morpa/Won-Games-Client"
     demo: "https://won-games.vercel.app/"
 
+  - name: "What's In"
+    description: "Challenge for the front end vacancy at Significa."
+    platform: "web"
+    stack: "TypeScript, NextJS, Styled Components"
+    source: "https://github.com/morpa/frontend-challenge"
+    demo: "https://my-code.morpa.vercel.app/"
 
+  - name: "LinkedIn Redesign"
+    description: "Implementation of a redesign for study purposes."
+    platform: "web"
+    stack: "TypeScript, NextJS, Styled Components"
+    source: "https://github.com/morpa/Linkedin-Redesign"
+    demo: "https://linkedin-redesign.vercel.app/"
 ---
