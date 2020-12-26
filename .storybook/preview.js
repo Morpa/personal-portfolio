@@ -9,7 +9,7 @@ addDecorator(withNextRouter())
 
 export const parameters = {
   backgrounds: {
-    default: 'port-light',
+    default: 'port-dark',
     values: [
       {
         name: 'port-light',

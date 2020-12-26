@@ -1,34 +1,16 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
 import ProjectCard, { ProjectCardProps } from '.'
 
+import mockProjects from 'components/ProjectCard/mock'
+
 export default {
   title: 'ProjectCard',
   component: ProjectCard,
-  args: {
-    title: 'Population Zero',
-    img: 'https://source.unsplash.com/user/willianjusten/300x140',
-    github: 'https://git.com',
-    url: 'https://site.com'
-  },
-  parameters: {
-    backgrounds: {
-      default: 'port-dark'
-    }
-  }
+  args: mockProjects
 } as Meta
 
 export const Default: Story<ProjectCardProps> = (args) => (
-  <ProjectCard {...args} />
-)
-
-export const WithRibbon: Story<ProjectCardProps> = (args) => (
-  <div style={{ width: '30rem' }}>
+  <div style={{ maxWidth: '30rem', margin: 'auto' }}>
     <ProjectCard {...args} />
   </div>
 )
-
-WithRibbon.args = {
-  ribbon: 'Mais recente',
-  ribbonSize: 'small',
-  ribbonColor: 'primary'
-}

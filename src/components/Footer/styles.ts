@@ -1,19 +1,20 @@
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.footer`
   ${({ theme }) => css`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: ${theme.spacings.small};
-    background: ${theme.colors.mainBg};
-    border-top: 1px solid ${theme.colors.yellow};
-  `}
-`
-export const Year = styled.main`
-  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.xsmall};
+    margin-bottom: 1rem;
+    text-align: center;
     color: ${theme.colors.yellow};
-    margin-top: ${theme.spacings.xxsmall};
+
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-bottom: -0.15rem;
+    }
+
+    span {
+      font-size: 1rem;
+    }
   `}
 `

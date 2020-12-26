@@ -1,11 +1,12 @@
-import Logo from 'components/Logo'
+import { GiTechnoHeart } from 'react-icons/gi'
 
 import * as S from './styles'
 
 const Footer = () => (
   <S.Wrapper>
-    <Logo color="yellow" />
-    <S.Year>{new Date().getFullYear()}</S.Year>
+    Made with&nbsp;
+    <GiTechnoHeart />
+    &nbsp;by Morpa
   </S.Wrapper>
 )
 
