@@ -1,7 +1,7 @@
 ---
 projects:
   - name: "React Avançado FAQ"
-    description: "The application has the functionality to facilitate the search for the most frequently asked questions in the Advanced React course. MDX files are used as a database for storing information."
+    description: "The application has the functionality to facilitate the search for the most frequently asked questions in the Advanced React course."
     platform: "web"
     stack: "TypeScript, NextJS, Styled Components"
     source: "https://github.com/morpa/FAQ"

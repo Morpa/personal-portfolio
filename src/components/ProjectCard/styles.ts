@@ -18,7 +18,6 @@ export const Wrapper = styled.article`
       bottom: 0;
       left: 0;
       right: 0;
-
       padding: 1rem;
       display: flex;
       flex-direction: column;
@@ -77,11 +76,13 @@ export const Wrapper = styled.article`
           justify-content: flex-start;
           color: ${theme.colors.gray};
           transition: color 300ms ease, transform 300ms ease;
-
           margin-left: 1.25rem;
 
-          svg {
+          > svg {
             margin-left: 0.5rem;
+            color: ${theme.colors.yellow};
+            width: 2rem;
+            height: 2rem;
           }
 
           &:hover {
@@ -91,11 +92,9 @@ export const Wrapper = styled.article`
         }
       }
     }
-
     img {
       width: 100%;
     }
-
     &:before {
       display: block;
       content: '';
@@ -110,13 +109,5 @@ export const IconCardWrapper = styled(ProfileStyles.IconWrapper)`
     width: 2rem;
     height: 2rem;
     margin-bottom: 1rem;
-  `}
-`
-
-export const ExternalLink = styled(ProfileStyles.IconWrapper)`
-  ${({ theme }) => css`
-    color: ${theme.colors.yellow};
-    width: 2rem;
-    height: 2rem;
   `}
 `

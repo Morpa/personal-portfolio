@@ -43,22 +43,19 @@ const ProjectCard = ({
       )}
       <header className="stack">{stack}</header>
       <p>{description}</p>
-      <div className="spacer"></div>
+      <div className="spacer" />
       <div className="links">
         <Link href={demo} passHref>
           <a target="_blank">
             Visit
-            <S.ExternalLink>
-              <ExternalLink aria-label="External Link" />
-            </S.ExternalLink>
+            <ExternalLink aria-label="External Link" />
           </a>
         </Link>
+
         <Link href={source} passHref>
           <a target="_blank">
             Source
-            <S.ExternalLink>
-              <ExternalLink aria-label="External Link" />
-            </S.ExternalLink>
+            <ExternalLink aria-label="External Link" />
           </a>
         </Link>
       </div>
