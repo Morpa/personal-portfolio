@@ -41,4 +41,11 @@ projects:
     stack: "TypeScript, NextJS, Styled Components"
     source: "https://github.com/morpa/Linkedin-Redesign"
     demo: "https://linkedin-redesign.vercel.app/"
+
+  - name: "Github Repos"
+    description: "Tool for searching github repositories."
+    platform: "web"
+    stack: "TypeScript, NextJS, Bulma, Sass"
+    source: "https://github.com/morpa/Github-repos"
+    demo: "https://gitnext.vercel.app/"
 ---
