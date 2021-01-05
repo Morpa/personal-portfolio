@@ -42,6 +42,13 @@ projects:
     source: "https://github.com/morpa/Linkedin-Redesign"
     demo: "https://linkedin-redesign.vercel.app/"
 
+  - name: "PokeNext"
+    description: "Pokedex with NextJS."
+    platform: "web"
+    stack: "TypeScript, NextJS, Styled Components"
+    source: "https://github.com/morpa/PokeNext"
+    demo: "https://mypokenext.vercel.app/"
+
   - name: "Github Repos"
     description: "Tool for searching github repositories."
     platform: "web"
