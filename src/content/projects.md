@@ -60,6 +60,6 @@ projects:
     description: "Page to demonstrate how to use the Internationalized Routing."
     platform: "web"
     stack: "TypeScript, NextJS, Styled Components"
-    source: "https://github.com/morpa/Locale"
+    source: "https://github.com/morpa/Locales"
     demo: "https://locales.vercel.app/"
 ---
