@@ -55,4 +55,11 @@ projects:
     stack: "TypeScript, NextJS, Bulma, Sass"
     source: "https://github.com/morpa/Github-repos"
     demo: "https://gitnext.vercel.app/"
+
+  - name: "Locales"
+    description: "Page to demonstrate how to use the Internationalized Routing."
+    platform: "web"
+    stack: "TypeScript, NextJS, Styled Components"
+    source: "https://github.com/morpa/Locale"
+    demo: "https://locales.vercel.app/"
 ---
