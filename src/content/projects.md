@@ -62,4 +62,11 @@ projects:
     stack: "TypeScript, NextJS, Styled Components"
     source: "https://github.com/morpa/Locales"
     demo: "https://locales.vercel.app/"
+
+  - name: "FrontEnd BR"
+    description: "Space for advertising vacancies for frontend developers."
+    platform: "web"
+    stack: "TypeScript, NextJS, Styled Components,Apollo, GraphQL"
+    source: "https://github.com/Morpa/FrontendBR"
+    demo: "https://frontendbr-jobs.vercel.app/"
 ---
