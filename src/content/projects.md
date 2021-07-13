@@ -26,7 +26,7 @@ projects:
     platform: "web"
     stack: "TypeScript, NextJS, Styled Components"
     source: "https://github.com/morpa/Won-Games-Client"
-    demo: "https://won-games.vercel.app/"
+    demo: "https://wow-games.vercel.app/"
 
   - name: "What's In"
     description: "Challenge for the front end vacancy at Significa."
