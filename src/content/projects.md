@@ -69,4 +69,11 @@ projects:
     stack: "TypeScript, NextJS, Styled Components,Apollo, GraphQL"
     source: "https://github.com/Morpa/FrontendBR"
     demo: "https://frontendbr-jobs.vercel.app/"
+
+  - name: "My Trips"
+    description: "A simple project to show in a map the places that I went and show more informations and photos when clicked."
+    platform: "web"
+    stack: "TypeScript, NextJS, Styled Components,Apollo, GraphQL"
+    source: "https://github.com/Morpa/My-Trips"
+    demo: "https://my-trips-steel.vercel.app/"
 ---
