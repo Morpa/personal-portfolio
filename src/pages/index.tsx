@@ -1,20 +1,20 @@
-import Main, { MainProps } from 'components/Main'
-import { getAllProjects } from 'libs/projects'
-import { getAllSkills } from 'libs/skills'
+import HomeTemplate, { HomeTemplateProps } from 'templates/Home'
+import client from 'graphql/client'
+import { GET_PROJECTS, GET_SKILLS } from 'graphql/queries'
+import { GetProjectsQuery, GetSkillsQuery } from 'graphql/generated/graphql'
 
-export default function Home(props: MainProps) {
-  return <Main {...props} />
+export default function Home({ skills, projects }: HomeTemplateProps) {
+  return <HomeTemplate skills={skills} projects={projects} />
 }
 
 export async function getStaticProps() {
-  const skills = getAllSkills()
-
-  const projects = getAllProjects()
+  const { skills } = await client.request<GetSkillsQuery>(GET_SKILLS)
+  const { projects } = await client.request<GetProjectsQuery>(GET_PROJECTS)
 
   return {
     props: {
-      skills: [...skills.skills],
-      projects: [...projects.projects]
+      skills,
+      projects
     }
   }
 }

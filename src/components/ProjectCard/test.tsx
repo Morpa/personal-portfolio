@@ -1,5 +1,4 @@
-import { screen } from '@testing-library/react'
-import { renderWithTheme } from 'utils/tests/helpers'
+import { render, screen } from 'utils/test-utils'
 
 import ProjectCard from '.'
 
@@ -14,7 +13,7 @@ const props = {
 
 describe('<ProjectCard />', () => {
   it('should render correctly', () => {
-    renderWithTheme(<ProjectCard {...props} />)
+    render(<ProjectCard {...props} />)
 
     expect(screen.getByText(/my project/i)).toHaveStyle({ color: '##FAFAFA' })
 

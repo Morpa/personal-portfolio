@@ -11,12 +11,12 @@ import SkillCard, { SkillsProps } from 'components/SkillCard'
 import * as S from './styles'
 import theme from 'styles/theme'
 
-export type MainProps = {
+export type HomeTemplateProps = {
   skills: SkillsProps[]
   projects: ProjectCardProps[]
 }
 
-const Main = ({ skills, projects }: MainProps) => {
+export default function HomeTemplate({ skills, projects }: HomeTemplateProps) {
   const [visible, setVisible] = useState({
     skills: false,
     projects: false
@@ -107,5 +107,3 @@ const Main = ({ skills, projects }: MainProps) => {
     </S.Page>
   )
 }
-
-export default Main

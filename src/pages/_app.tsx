@@ -33,8 +33,7 @@ function App({ Component, pageProps }: AppProps) {
           description: 'My personal portfolio',
           images: [
             {
-              url:
-                'https://res.cloudinary.com/morpa/image/upload/v1606985396/MyFiles/Morpa_qrqyfj.png'
+              url: 'https://res.cloudinary.com/morpa/image/upload/v1606985396/MyFiles/Morpa_qrqyfj.png'
             }
           ],
           site_name: 'Morpa',

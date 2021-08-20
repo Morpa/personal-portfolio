@@ -1,11 +1,9 @@
-import { screen } from '@testing-library/react'
-import { renderWithTheme } from 'utils/tests/helpers'
-
+import { render, screen } from 'utils/test-utils'
 import Footer from '.'
 
 describe('<Footer />', () => {
   it('should render the footer correctly', () => {
-    const { container } = renderWithTheme(<Footer />)
+    const { container } = render(<Footer />)
 
     expect(screen.getByText(/Made with by Morpa/i)).toBeInTheDocument()
 

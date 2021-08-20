@@ -1,5 +1,4 @@
-import { screen } from '@testing-library/react'
-import { renderWithTheme } from 'utils/tests/helpers'
+import { render, screen } from 'utils/test-utils'
 
 import Skills from '.'
 
@@ -10,7 +9,7 @@ const props = {
 
 describe('<Skills />', () => {
   it('should render image correctly', () => {
-    renderWithTheme(<Skills {...props} />)
+    render(<Skills {...props} />)
 
     expect(screen.getByText(/typescript/i)).toBeInTheDocument()
 
