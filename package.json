@@ -40,7 +40,7 @@
     "react-icons": "^4.1.0",
     "react-masonry-css": "^1.0.14",
     "react-visibility-sensor": "^5.1.1",
-    "styled-components": "5.3.0",
+    "styled-components": "5.3.1",
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
