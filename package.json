@@ -54,7 +54,7 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^12.1.1",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.9.6",
+    "@types/node": "^16.10.2",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^17.0.26",
     "@types/styled-components": "^5.1.14",
