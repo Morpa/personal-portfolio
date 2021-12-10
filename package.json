@@ -28,7 +28,7 @@
     "@styled-icons/feather": "^10.18.0",
     "@styled-icons/material-outlined": "^10.18.0",
     "@styled-icons/zondicons": "^10.18.0",
-    "framer-motion": "^5.4.1",
+    "framer-motion": "^5.4.5",
     "graphql": "^15.7.2",
     "graphql-request": "^3.6.1",
     "next": "^11.1.2",
@@ -73,6 +73,6 @@
     "lint-staged": "^12.1.2",
     "plop": "^3.0.2",
     "prettier": "^2.4.1",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.3"
   }
 }
