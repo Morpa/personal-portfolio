@@ -29,7 +29,7 @@
     "@styled-icons/material-outlined": "^10.18.0",
     "@styled-icons/zondicons": "^10.18.0",
     "framer-motion": "^6.2.6",
-    "graphql": "^15.7.2",
+    "graphql": "^15.8.0",
     "graphql-request": "^3.6.1",
     "next": "^11.1.2",
     "next-pwa": "^5.4.1",
