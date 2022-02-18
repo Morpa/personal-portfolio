@@ -15,6 +15,7 @@ export async function getStaticProps() {
     props: {
       skills,
       projects
-    }
+    },
+    revalidate: 60 * 60 * 24
   }
 }
