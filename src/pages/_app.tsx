@@ -23,6 +23,9 @@ function App({ Component, pageProps }: AppProps) {
           content="7B2zsyX4d4aviD42HO2alk4CNAplAk25PLE5UmQt-3E"
         />
       </Head>
+
+      {/*
+      Disabled for now.
       <NextSeo
         title="Morpa"
         description="My personal portfolio"
@@ -44,7 +47,7 @@ function App({ Component, pageProps }: AppProps) {
           site: '@site',
           cardType: 'summary_large_image'
         }}
-      />
+      /> */}
       <GlobalStyles />
       <Component {...pageProps} />
     </ThemeProvider>
