@@ -28,7 +28,7 @@
     "@styled-icons/feather": "^10.18.0",
     "@styled-icons/material-outlined": "^10.18.0",
     "@styled-icons/zondicons": "^10.18.0",
-    "framer-motion": "^6.2.7",
+    "framer-motion": "^6.2.9",
     "graphql": "^16.3.0",
     "graphql-request": "^4.1.0",
     "next": "^12.1.0",
